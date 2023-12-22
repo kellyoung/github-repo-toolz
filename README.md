@@ -9,7 +9,7 @@ Instead of using a library like `Git Python`, `github-repo-toolz` uses the Githu
 ## Usage Example
 
 ```
-from github_rep import GithubRepo
+from github_repo import GitHubRepo
 
 owner = <GITHUB_REPO_OWNER>
 repo = <GITHUB_REPO_NAME>
@@ -27,7 +27,7 @@ latest_commit_sha = github.get_latest_commit_sha(origin_branch)
 
 # this is the name of the branch for your pull request
 branch_name = <NEW_BRANCH_NAME>
-github.create_branch(branch_name, commit_sha)
+github.create_branch(branch_name, latest_commit_sha)
 
 # the example files are in this repo, this is to give a robust explanation of adding/creating blobs for multiple files
 
